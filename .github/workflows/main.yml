@@ -13,10 +13,9 @@ jobs:
       - name: Switch to Xcode 13
         run: sudo xcode-select --switch /Applications/Xcode_13.4.1.app
       
-      - name: Compile
-        run: fastlane gym --scheme "Release-Verifier-Prod" --skip_package_ipa true --disable_package_automatic_updates true --destination "generic/platform=iOS Simulator" --output_directory ~/Library 
+      - run: fastlane gym --scheme "Release-Verifier-Prod" --skip_package_ipa true --disable_package_automatic_updates true --destination "generic/platform=iOS Simulator" --output_directory .
       - uses: mobile-dev-inc/action-maestro-cloud@v1.1.1
         with:
           api-key: ${{ secrets.MAESTRO_CLOUD_API_KEY }}
-          app-file: ~/Library/CovidCertificateVerifier.app
+          app-file: CovidCertificateVerifier.app
           api-url: https://api.smobile.dev
