@@ -9,10 +9,12 @@ jobs:
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-xcode@v2
-        with:
-          xcode-version: 13
-      - run: fastlane gym --scheme "Release-Verifier-Prod" --disable_package_automatic_updates true --destination "generic/platform=iOS Simulator"
+
+      - name: Switch to Xcode 13
+        run: sudo xcode-select --switch /Applications/Xcode_12_5.app
+      
+      - name: Compile
+        run: fastlane gym --scheme "Release-Verifier-Prod" --disable_package_automatic_updates true --destination "generic/platform=iOS Simulator"
       - uses: mobile-dev-inc/action-maestro-cloud@v1.1.1
         with:
           api-key: ${{ secrets.MAESTRO_CLOUD_API_KEY }}
