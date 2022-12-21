@@ -1,0 +1,4 @@
+appId: ch.admin.bag.covidcertificate.verifier
+---
+- launchApp
+- tapOn: Fail
