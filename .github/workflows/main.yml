@@ -17,5 +17,4 @@ jobs:
         with:
           api-key: ${{ secrets.MAESTRO_CLOUD_API_KEY }}
           app-file: CovidCertificateVerifier.app
-          api-url: https://api.smobile.dev
           async: true
