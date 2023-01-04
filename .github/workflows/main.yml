@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: mobile-dev-inc/action-maestro-cloud@add-android-api-level
+      - uses: mobile-dev-inc/action-maestro-cloud@94a07ca79a253059a75813a22b7463a0c2277e3f
         with:
           api-key: ${{ secrets.MAESTRO_CLOUD_API_KEY }}
           app-file: .github/app-debug.apk
