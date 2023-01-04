@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: macos-12
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
 
@@ -16,4 +16,5 @@ jobs:
           app-file: .github/app-debug.apk
           api-url: https://api.smobile.dev
           android-api-level: 33
+          workspace: .github/maestro/
           async: true
