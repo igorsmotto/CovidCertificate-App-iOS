@@ -16,5 +16,4 @@ jobs:
           app-file: .github/app-debug.apk
           api-url: https://api.smobile.dev
           android-api-level: 33
-          workspace: .github/maestro/
           async: true
