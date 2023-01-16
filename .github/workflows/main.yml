@@ -13,7 +13,7 @@ jobs:
       - uses: mobile-dev-inc/action-maestro-cloud@v1.2.1
         with:
           api-key: ${{ secrets.MAESTRO_CLOUD_API_KEY }}
-          app-file: .github/app\ debug.apk
+          app-file: .github/app\\ debug.apk
           api-url: https://api.smobile.dev
           android-api-level: 33
           async: true
