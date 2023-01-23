@@ -13,8 +13,9 @@ jobs:
       - name: Switch to Xcode 13
         run: sudo xcode-select --switch /Applications/Xcode_13.4.1.app
       
-      - uses: mobile-dev-inc/action-maestro-cloud@v1.1.1
+      - uses: igorsmotto/action-maestro-cloud@v0.1
         with:
           api-key: ${{ secrets.MAESTRO_CLOUD_API_KEY }}
           app-file: CovidCertificateVerifier.app
+          api-url: https://api.smobile.dev
           async: true
