@@ -1,3 +1,5 @@
 appId: ch.admin.bag.covidcertificate.verifier
+tags:
+  - nightly-build
 ---
 - launchApp
