@@ -19,3 +19,4 @@ jobs:
           app-file: CovidCertificateVerifier.app
           api-url: https://api.smobile.dev
           async: true
+          exclude-tags: [nightly-build]
