@@ -20,3 +20,4 @@ jobs:
           api-url: https://api.smobile.dev
           async: true
           exclude-tags: nightly-build
+          include-tags: dev
