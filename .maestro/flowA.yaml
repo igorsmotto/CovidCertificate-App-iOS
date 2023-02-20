@@ -1,4 +1,6 @@
 appId: ch.admin.bag.covidcertificate.verifier
+tags:
+  - dev
 ---
 - launchApp
 - tapOn: "A"
