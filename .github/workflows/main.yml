@@ -11,14 +11,14 @@ jobs:
       - uses: actions/checkout@v2
       
       - id: first
-        uses: igorsmotto/action-maestro-cloud@v0.8
+        uses: mobile-dev-inc/action-maestro-cloud@v1.6.0
         with:
           api-key: ${{ secrets.MAESTRO_CLOUD_API_KEY }}
           app-file: CovidCertificateVerifier.app
           api-url: https://api.smobile.dev
           async: true
 
-      - uses: igorsmotto/action-maestro-cloud@v0.8
+      - uses: mobile-dev-inc/action-maestro-cloud@v1.6.0
         with:
           api-key: ${{ secrets.MAESTRO_CLOUD_API_KEY }}
           app-binary-id: ${{ steps.first.outputs.MAESTRO_CLOUD_APP_BINARY_ID }}
