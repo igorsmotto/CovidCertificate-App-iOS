@@ -2,4 +2,4 @@ appId: ${APP_ID}
 tags:
   - nightly-build
 ---
-- launchApp
+- launchApp: ${APP_ID}
