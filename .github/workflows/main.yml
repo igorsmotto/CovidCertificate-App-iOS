@@ -24,4 +24,4 @@ jobs:
           project-id: proj_01hw4vkhzxexjs2n751px90fc6
           app-file: ${{ env.APP_PATH }}
           env: |
-            APP_ID=com.myprizepicks.rn.local
+            APP_ID=ch.admin.bag.covidcertificate.verifier
