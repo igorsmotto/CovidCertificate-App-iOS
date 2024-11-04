@@ -1,4 +1,4 @@
-appId: ch.admin.bag.covidcertificate.verifier
+appId: ${APP_ID}
 tags:
   - nightly-build
 ---
