@@ -1,0 +1,7 @@
+appId: ${APP_ID}
+onFlowStart:
+  - launchApp: ${APP_ID}
+tags:
+  - nightly-build
+---
+- launchApp

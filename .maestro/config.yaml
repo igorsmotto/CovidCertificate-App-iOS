@@ -1,0 +1,3 @@
+baselineBranch: main
+appSize:
+    enabled: false
